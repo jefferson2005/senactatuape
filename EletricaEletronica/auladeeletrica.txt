@@ -1,0 +1,8 @@
+DATA: 25/04/22	
+Medir a tensão da tomada do laboratório no Senac: nutro com fase= 121,5 
+(Obs: utilizando um motimetro e calibrei para escala de corrente alternada de 200v)
+Testando a cuntinuidade do cado do Senac: 121,00                                         
+Teste do cabo: Cabo bom 00,00
+Testando a Corrente Contínua da Fonte 
+(Obs:3,3v-LA, 5V-VE e 12V_AM)
+
