@@ -1,8 +1,37 @@
 DATA: 25/04/22	
 Medir a tensão da tomada do laboratório no Senac: nutro com fase= 121,5 
-(Obs: utilizando um motimetro e calibrei para escala de corrente alternada de 200v)
-Testando a cuntinuidade do cado do Senac: 121,00                                         
+(Obs: utilizando um multímetro e calibrei para escala de corrente alternada de 200v)
+Testando a continuidade do cado do Senac: 121,00                                         
 Teste do cabo: Cabo bom 00,00
 Testando a Corrente Contínua da Fonte 
 (Obs:3,3v-LA, 5V-VE e 12V_AM)
+
+
+09/05/22 (aula 3 avaliação)
+1- Medir a tensão da tomada do laboratório no Senac: n+f 122,2 n+t 0,04 t+f 123,5 ( Corrente Alternada) 
+
+2 - Medir tensão do cabo: n+f 121,5 n+t 0,5 T+f 123,5 (Corrente Alternada)
+
+3 - Medir a continuidade do cabo teste de diodo = f+F 0,0 t+t 0,0 n+n 0,0 (Teste de Diodo) 
+ 
+4 - Medir a resistência do cabo de força f+f 0,4 n+n0,5 t+t 0,12 (Teste de 200 Ohms)
+
+(OBS: utilizando o multímetro )  
+
+5 - Testando a fonte com o testeador de fonte: (-12: 12.0) (+12v2: 12.2) (5VSb: 5.0) (PG: 260ms) (+5v: 5.1) (+12v1: 12.3) (+3.3V: 3.3) 
+
+6 - Circuito na Protoboard 
+Circuito de 12v (Cabo Amarelo 12v + Preto 0v/COM/TERRA)
+
+Circuito de 5v (Cabo Vermelho  5v + Preto 0v/COM/TERRA 
+
+Circutio de 7v (Cabo Amarelo 12v + Vermelho 5v) 
+
+Teste sinotimer/Régua 
+Tensão de tomada: 121,9v
+Corrente total da Régua: 32a 
+Comsumo total de Energia (5 fontes ligadas): 31w  
+Consumo total por Hora: 0,017kw/h
+
+
 
