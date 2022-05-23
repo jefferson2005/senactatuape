@@ -31,7 +31,7 @@ git config --global user.name (Usuário de commint)
 git config --global user.email (Usuário de Acesso)
 git cinfig --list (Listar as Confiruações)
 
-git add (Adicionar as mudanças)
+git add . (Adicionar as mudanças)
 git commit -m "Atualizacao" (Confirmar as mudanças)
 git push (Atualizar o Repositório remoto)
 
