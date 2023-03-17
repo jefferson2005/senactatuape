@@ -1,0 +1,33 @@
+DOCUMENTAÇÂO
+
+GRUPO-02
+ Iniciamos com a instalação das isos do Firewall, pfsense e Windows Server, cada um em uma máquina diferente
+ 
+ Logo após configuramos o Pfsense para o acesso ao endereço WEB via LAN e configurção do mesmo pelo site
+ 
+ Configuramos o rotiador wi-fi para ter acesso remoto da internet
+ 
+ Fizemos a linkagem do Firewall, Windows Server e Desktops através do Roteador 
+ 
+ Instalamos o DHCP, AD DS, e DNS, para configurações dos mesmos 
+ 
+ Configuramos os Domínios e criamos os usúarios e cada um com sua pasta base
+ 
+ Criamos as GPOS, horário de logon de cada funcionário e seus respectivos scripts de logon dependendo de sua função 
+ 
+ Testamos os scripts de logon dos usúarios em alguns notebooks fornecidos, testamos também as GPOS, permissões e etc
+ 
+ Aproveitando, fizemos a instalação de todas as aplicações para o acesso remoto ao Pfsense via Wan
+
+ Iníciamos a instalação do Ubuntu Server (dentro do Windows Server)
+
+ Desenvolvido de 2 sites via HTML, um para o Ubuntu e outro para Windows
+ 
+ Instalação do ISS para fazer o upgrade da versão ADM do Windows no site do Windows Server
+ 
+ Completando com configurações do Ubunto e também do Apache2 e Mysql
+ 
+ Sub-finalizar, instalação e configurção do Tomcat
+ 
+ Finalizamos com configurações das impressoras dentro do Windows Server, e mais configurções de script de logon
+ 
