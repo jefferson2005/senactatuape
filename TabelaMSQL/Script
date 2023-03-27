@@ -1,0 +1,137 @@
+/**
+* Agenda de contatos
+* @author Jefferson Lins de Oliveira
+*/
+
+-- comentários em linha
+
+-- exibir banco de dados 
+show databases;
+
+-- apagar um banco de dados
+drop database dbagenda;
+
+-- criar um novo banco de dados
+create database dbagenda;
+
+-- selecionar o banco de dados a ser trabalhado
+use dbagenda; 
+
+-- criando uma tabela no banco de dados
+-- int (tipo de dados: número inteiro)
+-- pruimary key (chave primária)
+-- auto_incrimente (numeração automática)
+-- varchar (tipo de dados: String)
+-- not null (campo obrigatório)
+
+create table contatos( 
+	id int primary key auto_increment, 
+	nome varchar(30) not null, 
+	fone varchar(15) not null,
+	email varchar(50) 
+ );
+
+show tables;
+
+-- descrever a tabela
+describe contatos;
+
+-- selecionar tudo da tabela
+select * from contatos;
+
+--  CRUD Create --
+insert into contatos (nome,fone,email) value 
+('Jefferson Lins','959695806-0909','Jefferson960@gmail.com');
+
+insert into contatos (nome,fone)
+value ('Bill Gates',' 9999999-00000');
+
+insert into contatos(nome,fone,email)
+value ('Jefferson Lins','8698543-3593','Jefferson@Jeff');
+
+insert into contatos(nome,fone)
+value ('Joyce Lins','523578-8252');
+
+insert into contatos(nome,fone)
+value ('João Oliveira','458295-92852');
+
+insert into contatos(nome,fone)
+value ('Júlia Oliveira','8235725-2194');
+
+insert into contatos(nome,fone)
+value ('Mario Armado','298592-582');
+
+insert into contatos(nome,fone)
+value ('Luigi Mario','69965-8549');
+
+insert into contatos(nome,fone)
+value ('Pierre Lins','29825-034');
+
+insert into contatos(nome,fone)
+value ('Loucura Talvez','59825-55252');
+
+-- simulando um erro
+insert into contatos(nome,fone,email)
+values('Robson Vaamonde','9839458-395848','vava@email.com');
+
+insert into contatos(nome,fone)
+values('Leandrão Raminho', '9090909-090909');
+
+-- CRUD Read --
+-- selecionar tudo na tabela
+select *from contatos;
+
+-- selecionar e ordenar 
+select * from contatos order by nome;
+select * from contatos order by nome desc;
+
+-- pesquisas avançadas
+select nome from contatos;
+select nome,email from contatos; 
+select * from contatos where nome like 'j%';
+select * from contatos where nome = 'Mario Armado';
+select * from contatos where id = 1;
+
+-- relatórios personalizados com apelidos para os campos --
+
+select nome as Contato, fone as Telefone, email as E_mail from contatos order by nome;
+
+
+-- CRUD Update --
+-- CUIDADO !!! (Sempre usar a cláusula where junto a chave primária)
+
+update contatos set fone = '19858-2985' where id =1;
+update contatos set fone = '99999-43132', email = 'Sissa@gmail.com' where id = 3;
+update contatos set nome = 'Mario armado', fone = '99999-00000', email = 'Mariomuitoarmado@gmail.com' where id = 7;
+
+-- Auterções --
+update contatos set email = 'Joãorato@gmail.com', nome = 'JOGOBRla' where id = 5;
+update contatos set email = 'Billgates@hotmail.com', nome = 'José', fone = '111111-0000' where id = 2;
+update contatos set email = 'LoucuraProvavel@gmail.com' where id = 10;
+update contatos set email = 'Desnecessario@gmail.com' where id = 8;
+update contatos set email = 'Steam2gmail.com', fone = '6666666-333333' where id = 4;
+
+-- CRUD delete --
+-- CUIDADO !!! (Sempre usar a cláusula where junto a chave primária) --
+
+delete from contatos where id = 1;
+
+-- Alterações na estrutura da tabela --
+alter table contatos add column obs varchar (100);
+
+-- Adicionar uma coluna após um local específico
+ alter table contatos add fone2 varchar(15) not null after fone;
+ 
+ -- aletrando tipo de dados ou validações
+ -- ATENÇÃO aos dados já cadastrados! 
+ 
+ alter table contatos modify fone2 varchar(20);
+ 
+ -- Excluir uma coluna 
+ alter table contatos drop column obs;
+ 
+ -- Excluir a tabela inteira 
+ drop table contatos;
+ 
+describe contatos;
+select * from contatos;
